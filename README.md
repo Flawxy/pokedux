@@ -1,6 +1,6 @@
 Personal project bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Training on React.
+Project from the Udemy formation [React 16+ Le Guide Complet (+Redux, React Router & Firebase)](https://www.udemy.com/course/react-le-guide-complet/).
 
 # Installation instructions
 -  Copy this repo :

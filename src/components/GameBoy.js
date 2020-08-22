@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react'
 
-import "./GameBoy.css";
+import './GameBoy.css'
 
-import Screen from "./Screen";
+import Screen from './Screen'
 
-const GameBoy = () => {
+const GameBoy = ({ showPokemon, catchPokemon }) => {
   return (
     <div>
       <div className="gameboy">
@@ -52,19 +52,19 @@ const GameBoy = () => {
               </div>
             </div>
 
-            <div className="ab-button a">
+            <div className="ab-button a" onClick={() => catchPokemon()}>
               <span className="button-text-height">A</span>
             </div>
 
-            <div className="ab-button b">
+            <div className="ab-button b" onClick={() => showPokemon()}>
               <span className="button-text-height">B</span>
             </div>
           </div>
           <div className="bottom-box">
-            <div className="pill-button button-select">
+            <div className="pill-button button-select" onClick={() => showPokemon()}>
               <label className="select">SELECT</label>
             </div>
-            <div className="pill-button button-start">
+            <div className="pill-button button-start" onClick={() => showPokemon()}>
               <label className="start">START</label>
             </div>
             <div className="speaker">
@@ -119,7 +119,7 @@ const GameBoy = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default GameBoy;
+export default GameBoy
