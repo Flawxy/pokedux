@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react'
 
-const PokemonItem = () => {
+const PokemonItem = ({ pokemon }) => {
+  const imgSrc = pokemon.isCatch ? 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png' : pokemon.img
+
   return (
-    <li className="pokemon-item">
+    <li className='pokemon-item'>
       <img
-        alt={"ditto"}
-        src={
-          "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
-        }
+        alt={pokemon.name}
+        src={imgSrc}
       />
-      ditto
+      {pokemon.name}
     </li>
-  );
-};
+  )
+}
 
-export default PokemonItem;
+export default PokemonItem
